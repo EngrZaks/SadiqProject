@@ -24,6 +24,11 @@ form {
   display: flex;
   flex-direction: column;
 }
+input {
+  font-size: 1em;
+  padding: 0.7em;
+}
+
 form * {
   margin: 0.4em;
   padding: 0.3em;
