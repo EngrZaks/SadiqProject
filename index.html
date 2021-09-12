@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="apple-mobile-web-app-status-bar" content="#EEFEEE" />
+    <meta name="theme-color" content="#EEFEEE" />
+    <title>Sadiq Web app</title>
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./serviceWorker.js"></script>
+    <script
+      src="https://kit.fontawesome.com/a74c8eebcf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>SADIQ'S FINAL YEAR PROJECT</h1>
+        <h2>make your conversions</h2>
+        <form action="">
+          <input type="text" name="e1" id="e1" placeholder="E1" required />
+          <input type="text" name="e2" id="e2" placeholder="E2" required />
+          <input type="text" name="n1" id="n1" placeholder="N1" required />
+          <input type="text" name="n2" id="n2" placeholder="N2" required />
+          <div class="buttons">
+            <button type="submit">Convert</button>
+            <span class="reset"><i class="fas fa-redo"></i></span>
+          </div>
+        </form>
+      </header>
+      <div class="result">
+        <h2>RESULT</h2>
+        <p>change in E: <span class="de"></span></p>
+        <p>change in N: <span class="dn"></span></p>
+        <h3>Distance: <span class="distance"></span></h3>
+        <h3>Angle: <span class="angle"></span></h3>
+      </div>
+    </main>
+    <script src="./app.js" defer></script>
+  </body>
+</html>
