@@ -22,16 +22,20 @@ const onSubmit = (e) => {
   distance.textContent = distanceValue;
   angle.textContent = angleValue;
   result.classList.add("show");
+  reset.classList.add("showreset");
   setTimeout(() => {
     result.classList.add("opac");
-    reset.classList.add("showreset");
-  }, 300);
+    reset.classList.add("opac");
+  }, 100);
 };
 form.addEventListener("submit", onSubmit);
-document.querySelector(".fa-redo").addEventListener("click", () => {
+reset.addEventListener("click", () => {
+  reset.classList.remove("showreset");
   form.reset();
   result.classList.remove("opac");
+  reset.classList.remove("opac");
   setTimeout(() => {
     result.classList.remove("show");
+    reset.classList.remove("showreset");
   }, 500);
 });

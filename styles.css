@@ -58,7 +58,9 @@ button {
   margin-top: 0.7em;
 }
 .reset {
+  transition: all 500ms ease-in;
   display: none;
+  opacity: 0;
   width: fit-content;
   box-shadow: 6px 6px 16px #d1cdc780, -6px -6px 16px rgba(255, 255, 255, 0.5);
   border: 1px solid rgba(255, 255, 255, 0.2);
